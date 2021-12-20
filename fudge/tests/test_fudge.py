@@ -207,7 +207,7 @@ class TestLongArgValues(unittest.TestCase):
         try:
             # this should not be shortened but the above arg spec should:
             fake.set_bits(newbits="99999999999999999999999999999999999999999999999999999999")
-        except AssertionError, exc:
+        except AssertionError as exc:
             eq_(str(exc),
             "fake:widget.set_bits(newbits='123456789101112131415161718192021222324252627...') "
             "was called unexpectedly with args "
