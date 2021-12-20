@@ -14,7 +14,7 @@ assert version
 
 extra_setup = {}
 if sys.version_info >= (3,):
-    extra_setup['use_2to3'] = True
+    extra_setup['use_2to3'] = False
     # extra_setup['use_2to3_fixers'] = ['your.fixers']
 
 setup(
