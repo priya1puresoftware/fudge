@@ -1,5 +1,5 @@
 
-import thread
+import _thread
 import sys
 import unittest
 import fudge
