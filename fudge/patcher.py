@@ -97,7 +97,7 @@ class patch(object):
             except:
                 etype, val, tb = sys.exc_info()
                 self.__exit__(etype, val, tb)
-                raise etype, val, tb
+                raise (self, etype, val, tb)
             else:
                 self.__exit__(None, None, None)
             return value
