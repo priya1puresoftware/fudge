@@ -131,7 +131,7 @@ class TestRegistry(unittest.TestCase):
                     
                     fudge.verify()
                     fudge.clear_expectations()
-                except Exception, er:
+                except Exception as er:
                     thread_run.errors.append(er)
                     raise
             finally:
