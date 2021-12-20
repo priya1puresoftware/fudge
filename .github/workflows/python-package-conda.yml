@@ -26,4 +26,4 @@ jobs:
       run: |
         conda install pytest
         pip install thread
-        pytest
+        ./run_tests.sh
