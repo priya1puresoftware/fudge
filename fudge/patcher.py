@@ -276,7 +276,6 @@ def patch_object(obj, attr_name, patched_value):
                     # We're at the top level module and it doesn't exist.
                     # Raise the first exception since it will make more sense:
                     etype, val, tb = exc
-                    raise etype, val, tb
                 if not adjusted_path.count('.'):
                     at_top_level = True
         for part in obj_path.split('.')[1:]:
