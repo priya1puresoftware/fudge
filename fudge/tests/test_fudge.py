@@ -63,7 +63,7 @@ class TestFake(unittest.TestCase):
         eq_(my_obj.vice, 'versa')
         try:
             my_obj.stuff
-        except Exception, exc:
+        except Exception as exc:
             eq_(str(exc), 'broken stuff')
         else:
             raise RuntimeError('expected Exception')
