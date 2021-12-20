@@ -89,7 +89,7 @@ class TestFake(unittest.TestCase):
         )
         try:
             fake.set_bits()
-        except AssertionError, exc:
+        except AssertionError as exc:
             eq_(str(exc),
             "fake:widget.set_bits('123456789101112131415161718192021222324252627...') "
             "was called unexpectedly with args ()")
