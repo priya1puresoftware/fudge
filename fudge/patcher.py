@@ -356,7 +356,6 @@ class PatchHandler(object):
             value = getattr(orig_object, name, NonExistant)
             is_local = False
         return value, is_local
-
     def _get_exact_original(self, orig_object, name):
         if hasattr(orig_object, '__dict__'):
             if name not in orig_object.__dict__:
