@@ -137,11 +137,11 @@ class TestRegistry(unittest.TestCase):
             finally:
                 thread_run.waiting -= 1
                 
-        thread.start_new_thread(registry, (1,))
-        thread.start_new_thread(registry, (2,))
-        thread.start_new_thread(registry, (3,))
-        thread.start_new_thread(registry, (4,))
-        thread.start_new_thread(registry, (5,))
+        _thread.start_new_thread(registry, (1,))
+        _thread.start_new_thread(registry, (2,))
+        _thread.start_new_thread(registry, (3,))
+        _thread.start_new_thread(registry, (4,))
+        _thread.start_new_thread(registry, (5,))
 
         count = 0
         while thread_run.waiting > 0:
