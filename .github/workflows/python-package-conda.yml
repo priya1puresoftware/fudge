@@ -27,4 +27,5 @@ jobs:
         conda install pytest
         pip install nose
         pip install tox
-        nosetests --with-xunit --xunit-file={toxinidir}/nosetests-{envname}.xml fudge.tests._py3_suite
+        pip install unicode
+        pytest
