@@ -256,7 +256,7 @@ def patch_object(obj, attr_name, patched_value):
         'clean'
 
     """
-    if isinstance(str, unicode):
+    if isinstance(str, bytes):
         obj_path = adjusted_path = obj
         done = False
         exc = None
