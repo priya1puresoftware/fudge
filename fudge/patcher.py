@@ -355,9 +355,6 @@ class PatchHandler(object):
         except (AttributeError, KeyError):
             value = getattr(orig_object, name, NonExistant)
             is_local = False
-        if value is NonExistant:
-            raise AttributeError(
-                    "%s does not have the attribute %r" % (orig_object, name))
         return value, is_local
 
     def _get_exact_original(self, orig_object, name):
