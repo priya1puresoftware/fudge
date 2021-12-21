@@ -26,4 +26,5 @@ jobs:
       run: |
         conda install pytest
         pip install nose
-        nosetests
+        pip install tox
+        nosetests --with-xunit --xunit-file={toxinidir}/nosetests-{envname}.xml fudge.tests._py3_suite
